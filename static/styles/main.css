@@ -1,0 +1,158 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  background: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form {
+  padding: 3rem;
+  text-align: center;
+}
+
+#loading-text{
+  position: absolute;
+  z-index: 999;
+  color: #05386B;
+  margin: 13rem 55rem;
+  font-size: 3rem;
+  font-weight: bold;
+  display: none;
+  background: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+  clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px #ffafbd, 0 0 25px #ffc3a0;
+}
+
+.output {
+  resize: none;
+  margin-bottom: 5rem;
+  border: 0.25rem solid rgba(0, 0, 0, 0.342);
+  background: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+  font-size: 1.5em;
+  text-align: left;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #000;
+  outline: none;
+  cursor: default;
+}
+
+.input{
+  resize: none;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  border: 0.25rem solid rgba(0, 0, 0, 0.342);
+  background: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+  font-size: 1.5em;
+  text-align: left;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #000;
+  outline: none;
+}
+
+::placeholder{
+  color: rgba(0, 0, 0, 0.342);
+}
+
+.submit {
+  background: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  color: #000;
+  border: rgba(0, 0, 0, 0.342) solid 0.15rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit:hover {
+  clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+  border: #ffafbd solid 0.1rem;
+  color: #000;
+}
+
+.submit:active {
+  box-shadow: inset 0 0 0.23rem 0.3rem hsla(350, 100%, 84%, 0.667);
+}
+
+#clear > button {
+  background: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  color: #000;
+  border: rgba(0, 0, 0, 0.342) solid 0.15rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#clear > button:hover {
+  clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+  border: #ffafbd solid 0.1rem;
+  color: #000;
+}
+
+#clear > button:active {
+  box-shadow: inset 0 0 0.23rem 0.3rem hsla(350, 100%, 84%, 0.667);
+}
+
+@media only screen 
+  and (min-device-width: 390px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  {
+    h1 {
+      margin-left: 1rem;
+    }
+    .input {
+      margin: 1rem -2rem 2rem -2rem;
+    }
+    .output {
+      margin: 3rem -2rem 2rem -2rem;
+    }
+    .submit {
+      margin-left: 1rem;
+    }
+    #clear > button {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+    #loading-text {
+      margin: 15rem 7rem
+    }
+  }
